@@ -6,7 +6,11 @@ Note taking manager CLI
 my-cli-app/
 ├── bin/
 │   └── cli.js
-├── lib/
+├── db/
+│   ├── connection.js
+│   ├── querys.js
+│   └── notes.db
+├── src/
 │   ├── commands/
 │   │   ├── init.js
 │   │   ├── build.js
