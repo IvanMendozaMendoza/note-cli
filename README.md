@@ -34,4 +34,7 @@ my-cli-app/
 ```
 
 >Libraries
-<!--- firstone-->
+
+- commander
+- inquerer list
+- jest
