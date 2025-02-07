@@ -38,3 +38,4 @@ my-cli-app/
 - commander
 - inquerer list
 - jest
+- execa
