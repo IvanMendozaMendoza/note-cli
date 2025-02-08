@@ -1,6 +1,6 @@
 import db from "./connection.js";
 
-const init = () => {
+const createNotesTable = () => {
   db.exec(`
         CREATE TABLE IF NOT EXISTS notes(
             key INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -18,4 +18,4 @@ const deleteOne = db.prepare('DELETE FROM notes WHERE key = ?');
 const deleteAll = db.prepare('DELETE FROM notes');
 const updateOne = db.prepare('UPDATE notes SET title = ?, content = ? WHERE key = ?');
 
-export { init, create, selectOne, selectAll, deleteOne, deleteAll, updateOne };
+export { createNotesTable, create, selectOne, selectAll, deleteOne, deleteAll, updateOne };
